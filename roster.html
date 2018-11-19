@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<title>Offense</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide">The SF 49ers</h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="index.html" class="w3-bar-item w3-button">home</a>
+    <a href="roster.html" class="w3-bar-item w3-button">roster</a>
+    <a href="staff.html" class="w3-bar-item w3-button">staff</a>
+    <a href="merchandise.html" class="w3-bar-item w3-button">shop</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">The SF 49ers</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Offense</p>
+  </header>
+
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img id="picture" src="images/offense/Brian Hyoer - QB.jpg" width="450px" height="156px" title="(QB)"/>
+        <p>Brian Hyoer</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/C.J. Beathard - QB.jpg" width="450px" height="156px" title="(QB)"/>
+        <p>C.J. Beathard</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/Carlos Hyde - RB.jpg" width="450px" height="156px" title="(RB)"/>
+        <p>Carlos Hyde</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/Garrett Celek - TE.jpg" width="450px" height="156px" title="(TE)"/>
+        <p>Garrett Celek</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/Joe Staley - T.jpg" width="450px" height="156px" title="(T)"/>
+        <p>Joe Staley</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/John Flynn - OL.jpg" width="450px" height="156px" title="(OL)"/>
+        <p>John Flynn</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/Pierre Garcon - WR.jpg" width="450px" height="156px" title="(WR)"/>
+        <p>Pierre Garcon</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/Rashad Ross - WR.jpg" width="450px" height="156px" title="(WR)"/>
+        <p>Rashad Ross</p>
+      </div>
+      <div class="w3-container">
+        <img id="picture" src="images/offense/Trent Taylor - WR.jpg" width="450px" height="156px" title="(WR)"/>
+        <p>Trent Taylor</p>
+      </div>
+    </div>
+
+  <!-- Subscribe section 
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div> -->
+  
+  <!-- Footer -->
+  <footer class="w3-padding-16 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <h6>&copy; <a href="mailto:shivamptl@gmail.com" title="Copyright" target="_blank">Shivam Patel</a> 2017</h6>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+<!-- Offense 
+<section class="container" background-size="cover">
+	<h2 class="col-sm-12">Offense</h2>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/Brian Hyoer - QB.jpg" width="450px" height="156px" title="(QB)"/>
+        <p>Brian Hyoer</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/C.J. Beathard - QB.jpg" width="450px" height="156px" title="(QB)"/>
+        <p>C.J. Beathard</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/Carlos Hyde - RB.jpg" width="450px" height="156px" title="(RB)"/>
+        <p>Carlos Hyde</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/Garrett Celek - TE.jpg" width="450px" height="156px" title="(TE)"/>
+        <p>Garrett Celek</p>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/Joe Staley - T.jpg" width="450px" height="156px" title="(T)"/>
+        <p>Joe Staley</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/John Flynn - OL.jpg" width="450px" height="156px" title="(OL)"/>
+        <p>John Flynn</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/Pierre Garcon - WR.jpg" width="450px" height="156px" title="(WR)"/>
+        <p>Pierre Garcon</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/Rashad Ross - WR.jpg" width="450px" height="156px" title="(WR)"/>
+        <p>Rashad Ross</p>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/offense/Trent Taylor - WR.jpg" width="450px" height="156px" title="(WR)"/>
+        <p>Trent Taylor</p>
+      </figure>
+    </div>
+  </section> -->
+
+<!-- Defense 
+<section class=container>
+	<h2 class="col-sm-12">Defense</h2>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(CB) Artie Burns.jpg" width="450px" height="156px" title="(CB)"/>
+        <p>Artie Burns</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(CB) Ross Crokrell.jpg" width="450px" height="156px" title="(CB)"/>
+        <p>Ross Crokrell</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(FS) Mike Mitchel.png" width="450px" height="156px" title="(FS)"/>
+        <p>Mike Mitchel</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(LDE) Cameron Heyward.png" width="450px" height="156px" title="(LDE)"/>
+        <p>Cameron Heyward</p>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(LILB) Ryan Shazier.jpg" width="450px" height="156px" title="(LILB)"/>
+        <p>Ryan Shazier</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(LOLB) Bud Dupree.jpg" width="450px" height="156px" title="(LOLB)"/>
+        <p>Bud Dupree</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(NT) Javon Hargrave.png" width="450px" height="156px" title="(NT)"/>
+        <p>Javon Hargrave</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(RILB) Vince Williams.png" width="450px" height="156px" title="(RILB)"/>
+        <p>Vince Williams</p>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(ROLB) James Harrison.png" width="450px" height="156px" title="(ROLB)"/>
+        <p>James Harrison</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/defense/(SS) Sean Davis.png" width="450px" height="156px" title="(SS)"/>
+        <p>Sean Davis</p>
+      </figure>
+    </div>
+</section> -->
+
+<!-- Special Teams 
+<section class=container>
+	<h2 class="col-sm-12">Special Teams</h2>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/special_teams/(KR) Sammie Coates.jpg" width="450px" height="156px" title="(KR)"/>
+        <p>Sammie Coates</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/special_teams/(LS) Greg Warren.jpg" width="450px" height="156px" title="(LS)"/>
+        <p>Greg Warren</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/special_teams/(P) Jordan Berry.png" width="450px" height="156px" title="(P)"/>
+        <p>Jordan Berry</p>
+      </figure>
+
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/special_teams/(PK) Chris Boswell.JPG" width="450px" height="156px" title="(PK)"/>
+        <p>Chris Boswell</p>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-6" >
+        <img id="picture" src="images/special_teams/(PR) Antonio Brown.jpg" width="450px" height="156px" title="(PR)"/>
+        <p>Antonio Brown</p>
+      </figure>
+    </div>
+</section> -->
